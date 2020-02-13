@@ -1,32 +1,32 @@
 //////////////////PROBLEM 1////////////////////
 
 //Create a variable called myName that is a string data type
-const myName = ""
 
+const myName = "Josh"
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
-const myAge = 1
 
+const myAge = 29
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
-const lovesCode = true
 
+const lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
-const greatestFear = undefined
 
+const greatestFear = undefined
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
-const devMountainGoal = null
 
+const devMountainGoal = null
 
 //////////////////PROBLEM 6////////////////////
 
@@ -34,26 +34,26 @@ const devMountainGoal = null
 //accepts name as its only parameter.
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
-function greeting(name) {
-    return `Hello, ` + name;
-}
 
+function greeting(name){
+  return "Hello, " + name
+};
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-let newGreeting = function(name) {
-    return `Hello, ` + name;
-}
+const newGreeting = function(name) {
+  return "Hello, " + name
+};
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
-groceries = ["apples", "milk", "eggs", "bread"]
 
+const groceries = ["apples", "milk", "eggs", "bread"]
 
 //////////////////PROBLEM 9////////////////////
 
@@ -61,18 +61,18 @@ groceries = ["apples", "milk", "eggs", "bread"]
 //The dog object should have the following properties:
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
-let dog = {
-    name: "Rudy",
-    color: "Brown",
-    age: 8,
-    goodBoy: true
-}
 
+const dog = {
+  name: "Maverick",
+  color: "brown",
+  age: 5,
+  goodBoy: true
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
-devMountainClassPet = dog.name
 
+var devMountainClassPet = dog.name
 
 //////////////////PROBLEM 10////////////////////
 
@@ -82,16 +82,15 @@ devMountainClassPet = dog.name
 //If the name parameter is Bryan, return 'Hey Bryan!'
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
-function nameCheck(name) {
-    if (name === "Steven") {
-        return 'What is up Steven?';
-    } else if (name === "Bryan") {
-        return "Hey Bryan!";
-    } else {
-        return 'Cool name, ' + name;
-    }
-}
 
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  }
+  return "Cool name, " + name
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -99,15 +98,15 @@ function nameCheck(name) {
 // that will be numbers.
 // The add function should return the two parameters added together
 
+
 function add(num1, num2) {
-    return num1 + num2;
+  return (num1 + num2)
 }
-mathSum = add(3, 4)
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-
+var mathSum = add(3, 4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -117,35 +116,34 @@ mathSum = add(3, 4)
 // If the passed in color equals 'green', return 'green is a solid favorite color'
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-function faveColorFinder(color) {
-    if (color === 'red') {
-        return 'red is a great color';
-    } else if (color === 'green') {
-        return 'green is a solid favorite color';
-    } else if (color === 'black') {
-        return 'so trendy';
-    } else {
-        return 'you need to evaluate your favorite color choice'
-    }
-}
 
+function faveColorFinder(color) {
+  if (color == 'red') {
+    return 'red is a great color';
+  }
+  else if (color == 'green') {
+    return 'green is a solid favorite color';
+  }
+  else if (color == 'black') {
+    return 'so trendy';
+  }
+    return 'you need to evaluate your favorite color choice';
+}
 
 //////////////////PROBLEM 13////////////////////
 
-let duck = 'cute';
+let duck = "cute";
 
 function bathroom() {
-    let rubberDuck = 'squeaky';
-    function bathtub() {
-        let sailorDuck = "nautical";
-    }
-}
-
-function pond() {
-    let realDuck = "fluffy";
+  let rubberDuck = "squeaky";
+  function bathtub() {
+    let sailorDuck = "nautical";
+  }
 }
   
-
+function pond() {
+    let realDuck = "fluffy";
+  }
   
 //There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
 //all within different scopes.
@@ -154,29 +152,27 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck"];
+let globalScope = 'duck';
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
 let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-
-let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck", "duck"];
-
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
-const age = 29;
 
+let age = 29;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
-const newAge = age + 1;
 
+age++;
 
 // Good news! We can live forever. Set your age to 999
-age = 999
+age = 999;
